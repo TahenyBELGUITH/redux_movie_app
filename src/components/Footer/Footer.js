@@ -4,6 +4,7 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
+      <div>TOuhApp</div>
       <div>
         &copy; 2023{" "}
         <span className="text-accent animate-pulse">

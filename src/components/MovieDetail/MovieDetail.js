@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { FaStar, FaThumbsUp, FaFilm, FaCalendarAlt } from "react-icons/fa";
 import "./MovieDetails.scss";
 import { useParams } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
@@ -31,17 +30,17 @@ const MovieDetail = () => {
             <div className="movie-title">{data.Title}</div>
             <div className="movie-rating">
               <span>
-                IMDB Rating <FaStar className="fa-star" /> : {data.imdbRating}
+                IMDB Rating <i className="fa fa-star"></i> : {data.imdbRating}
               </span>
               <span>
-                IMDB Votes <FaThumbsUp className="fa-thumbs-up" />:{" "}
+                IMDB Votes <i className="fa fa-thumbs-up"></i> :{" "}
                 {data.imdbVotes}
               </span>
               <span>
-                Runtime <FaFilm className="fa-film" /> : {data.Runtime}
+                Runtime <i className="fa fa-film"></i> : {data.Runtime}
               </span>
               <span>
-                Year <FaCalendarAlt className="fa-calendar" /> : {data.Year}
+                Year <i className="fa fa-calendar"></i> : {data.Year}
               </span>
             </div>
             <div className="movie-plot">{data.Plot}</div>
